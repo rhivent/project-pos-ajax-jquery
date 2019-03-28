@@ -1,0 +1,65 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="jquery-2.1.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                // trigeger
+                $("#button").click(function()
+            {
+                // kejadian
+                
+                        // selektor element
+                        $("#text").hide(100);
+  
+            });
+            });
+            
+        </script>
+                <script type="text/javascript">
+            $(document).ready(function(){
+                // trigeger
+                $("#button").dblclick(function()
+            {
+                // kejadian
+                
+                        // selektor element
+                        $("#text").show();
+  
+            });
+            });
+            
+        </script>
+        
+        
+        
+               <script type="text/javascript">
+            $(document).ready(function(){
+                $("#combobox").change(function()
+            {
+                var nilai=$("#combobox").val();
+                 alert(nilai);
+            });
+            });
+            
+        </script>
+    </head>
+    <body>
+        
+        <button id="button">klik saya</button>
+        <div id="text">selamat pagi </div>
+        
+        
+        <select id="combobox">
+            <option value="1">sample 1</option>
+             <option value="2">sample 2</option>
+              <option value="3">sample 3</option>
+        </select>
+    </body>
+</html>

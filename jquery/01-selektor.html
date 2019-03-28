@@ -1,0 +1,43 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="jquery-2.1.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                // trigeger
+                $("#button").click(function()
+            {
+                // kejadian
+                
+                        // selektor element
+                        $("p").hide(100);
+                        // selektor ID
+                        $("#text").hide(100);
+                        // selektor class
+                        $(".classselektor").hide(100);
+            });
+            });
+            
+        </script>
+    </head>
+    <body>
+        
+        <button id="button">klik saya</button>
+        
+        <div id="text">selektor ID</div>
+        
+        <div class="classselektor">selektor class</div>
+        
+        <p>text 1</p>
+        <p>text 2</p>
+        <p>text 3</p>
+        <p>text 4</p>
+        <p>text 5</p>
+    </body>
+</html>

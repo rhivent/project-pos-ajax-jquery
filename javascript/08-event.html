@@ -1,0 +1,59 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <script type="text/javascript">
+        function tampilkanPesan(pesan)
+        {
+            alert('saya diklik');
+        }
+        
+        
+        function ubahStatus()
+        {
+            alert('status berubah');
+        }
+        
+        function cari()
+        {
+            alert('data sedang dicari');
+        }
+        
+        function validasi()
+        {
+            var nama=document.formpendaftaran.nama.value;
+            if(nama=='')
+                {
+                    alert('masukan nama');
+                }
+                else
+                    {
+                        alert(nama);
+                    }
+        }
+
+    </script>
+    <body>
+        <button type="button" onclick="tampilkanPesan('saya telah diklik')">klik saya</button>
+        
+        <select name="sample" onchange="ubahStatus()">
+            <option value="">Belum Dikirim</option>
+            <option value="">Sudah Dikirim</option>
+        </select>
+        
+        
+        <input type="text" onkeypress="cari()" placeholder="kata kunci pencarian">
+        
+        
+        <form name="formpendaftaran">
+            <input type="text" name="nama" placeholder="masukan nama">
+            <button type="submit" onclick="validasi()">Kirim</button>
+        </form>
+    </body>
+</html>

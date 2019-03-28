@@ -1,0 +1,48 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <script type="text/javascript">
+        var nilai=90;
+        var nilai2=91;
+        
+        var status;
+        status="01nikah";
+        var hasil;
+        if(nilai==90 && nilai2==91)
+        {
+             hasil="A";
+        }
+         else if(nilai>80 || nilai<=89)
+        {
+             hasil="B";
+        }
+        else if(nilai>65)
+        {
+             hasil="C";
+        }
+        else
+        {
+            hasil="D";
+        }
+        
+        if(status=="nikah")
+            {
+                document.write("status= sudah menikah");
+            }
+            else if(status!="menikah")
+                {
+                   document.write("status belum menikah"); 
+                }
+        //document.write("hasilnya adalah= " + hasil);
+    </script>
+    <body>
+        
+    </body>
+</html>

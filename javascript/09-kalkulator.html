@@ -1,0 +1,32 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">
+            function kalkulator()
+            {
+                var nilai1=parseInt(document.form.nilai1.value);
+                var nilai2=parseInt(document.form.nilai2.value);
+                var operator=document.form.operator.value;
+                var hasil;
+                hasil=(nilai1+operator+nilai2);
+                document.getElementById('hasil').innerHTML=hasil;
+            }
+        </script>
+    </head>
+    <body>
+        
+        
+        <form name="form">
+            <input type="text" name="nilai1" placeholder="nilai1" onkeyup="kalkulator()">
+            <input type="text" name="operator" placeholder="operator" onkeyup="kalkulator()">
+            <input type="text" name="nilai2" placeholder="nilai2" onkeyup="kalkulator()">
+            = <p id="hasil"></p>
+        </form>
+    </body>
+</html>

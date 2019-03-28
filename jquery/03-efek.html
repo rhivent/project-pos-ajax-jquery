@@ -1,0 +1,42 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <script src="jquery-2.1.1.min.js"></script>
+         <script type="text/javascript">
+             $(document).ready(function()
+         {
+             $("#fadeOut").click(function()
+                {
+                    $(".kotak").fadeOut(3000);
+                   
+                });
+                $("#fadeIn").click(function()
+            {
+                $(".kotak").fadeIn(500); 
+            });
+         
+         });
+         </script>
+         <style type="text/css">
+            .kotak
+            {
+                width: 200px;
+                height: 200px;
+                border: 1px;
+                background: red;
+            }
+         </style>
+    </head>
+    <body>
+        <div class="kotak"></div>
+        
+        <button id="fadeOut">FadeOut</button>
+        <button id="fadeIn">FadeIN</button>
+    </body>
+</html>

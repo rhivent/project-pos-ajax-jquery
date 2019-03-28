@@ -1,0 +1,31 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="jquery-2.1.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#username").keyup(function(){
+                    var username=$("#username").val();
+                    $.ajax({
+                        type:"POST",
+                        url:"periksausername.php",
+                        data:"username="+username,
+                        success:function(html){
+                            $("#notif").html(html);
+                        }
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <input type="text" id="username" placeholder="username">
+        <div id="notif"></div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="jquery-2.1.1.min.js"></script>
+          <script type="text/javascript">
+            function proses()
+            {
+                var nama=$("#nama").val();
+                var umur=$("#umur").val()
+                var hoby=$("#hoby").val();
+                    $.ajax({
+                        type:"GET",
+                        url:"selamat.php",
+                        data:"nama="+nama+"&umur="+umur+"&hoby="+hoby,
+                        success:function(html){
+                            $("#berhasil").html(html);  
+                        }
+                    });
+            }
+        </script>
+        
+ 
+    </head>
+    <body>
+        <div>Masukan Nama Anda : 
+            <input type="text" id="nama" placeholder="nama" onkeyup="proses()">
+            <input type="text" id="umur" placeholder="umur" onkeyup="proses()">
+            <input type="text" id="hoby" placeholder="Hoby" onkeyup="proses()">
+        </div>
+        <div id="berhasil"></div>
+    </body>
+</html>
